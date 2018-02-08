@@ -24,4 +24,6 @@ def list(songs)
 end 
 
 def play(songs)
-  puts "Pleas"
+  puts "Please enter a song name or number:"
+  songornumber = gets.chomp
+  
