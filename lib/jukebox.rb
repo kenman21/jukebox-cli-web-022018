@@ -44,3 +44,20 @@ end
 def exit_jukebox 
   puts "Goodbye"
 end 
+
+def run 
+  help
+  while command != "exit"
+    puts "Please enter a command:"
+    command = gets.chomp
+    if command == "list"
+      list
+    elsif command == "play"
+      play(songs)
+    elsif command == "help"
+      help
+    end 
+  end
+  exit_jukebox
+end 
+  
