@@ -19,6 +19,6 @@ def help
 - exit : exits this program "
 end 
 
-def list 
+def list(songs)
   songs.each {|song| puts "#{songs.index + 1} #{song}"}
 end 
