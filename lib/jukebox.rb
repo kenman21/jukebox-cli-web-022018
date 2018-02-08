@@ -23,4 +23,5 @@ def list(songs)
   songs.each {|song| puts "#{songs.index(song)+1}. #{song}"}
 end 
 
-def
+def play(songs)
+  puts "Pleas"
