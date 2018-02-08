@@ -36,3 +36,6 @@ def play(songs)
   elsif possiblesongs.include?(songornumber)
     puts "Playing #{songornumber}"
   else 
+    puts "Invalid input, please try again"
+  end 
+end 
