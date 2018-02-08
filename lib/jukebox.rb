@@ -49,7 +49,6 @@ def run
   help
   puts "Please enter a command:"
   command = gets.chomp
-  while command != "exit"
     if command == "list"
       list
     elsif command == "play"
