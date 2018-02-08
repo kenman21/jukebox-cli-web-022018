@@ -24,6 +24,7 @@ def list(songs)
 end 
 
 def play(songs)
+  possiblenumbers = songs.map {|song| songs.index
   puts "Please enter a song name or number:"
   songornumber = gets.chomp
   
