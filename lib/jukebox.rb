@@ -50,8 +50,8 @@ def run
   puts "Please enter a command:"
   command = gets.chomp
   while command != "exit"
-  puts "Please enter a command:"
-  command = gets.chomp
+    puts "Please enter a command:"
+    command = gets.chomp
     if command == "list"
       list
     elsif command == "play"
