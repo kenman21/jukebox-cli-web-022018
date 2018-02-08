@@ -26,7 +26,9 @@ end
 def play(songs)
   possiblenumbers = Array.new
   possiblesongs = Array.new
-  songs.map {|song| possiblenumbers.push(songs.index(song)+1), possiblesongs.push(song)}
+  songs.map {|song| possiblenumbers.push(songs.index(song)+1) 
+  possiblesongs.push(song)}
   puts "Please enter a song name or number:"
   songornumber = gets.chomp
-  
+  if possiblenumbers.include?(songornumber) || possiblesongs.include?(songornumber)
+    puts "Playing #{"
