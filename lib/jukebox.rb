@@ -26,12 +26,13 @@ end
 def play(songs)
   possiblenumbers = Array.new
   possiblesongs = Array.new
-  songs.map {|song| possiblenumbers.push(songs.index(song)+1) 
+  songs.each {|song| possiblenumbers.push(songs.index(song)+1) 
   possiblesongs.push(song)}
+  puts songs
   puts "Please enter a song name or number:"
   songornumber = gets.chomp
-  if possiblenumbers.include?(songornumber) 
-    song = songs(songornumber.to_i-1)
+  if possiblenumbers.include?(songornumber.to_i) 
+    song = songs[songornumber.to_i-1]
     puts "Playing #{song}"
   elsif possiblesongs.include?(songornumber)
     puts "Playing #{songornumber}"
