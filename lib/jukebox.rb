@@ -20,5 +20,5 @@ def help
 end 
 
 def list(songs)
-  songs.each {|song| puts "#{songs.index + 1} #{song}"}
+  songs.each {|song| puts "#{songs.index} #{song}"}
 end 
