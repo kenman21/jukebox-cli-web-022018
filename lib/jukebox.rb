@@ -30,5 +30,7 @@ def play(songs)
   possiblesongs.push(song)}
   puts "Please enter a song name or number:"
   songornumber = gets.chomp
-  if possiblenumbers.include?(songornumber) || possiblesongs.include?(songornumber)
-    puts "Playing #{"
+  if possiblenumbers.include?(songornumber) 
+    puts "Playing #{""
+  elsif possiblesongs.include?(songornumber)
+    puts "Playing #{songornumber}"
