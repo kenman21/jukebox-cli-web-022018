@@ -50,8 +50,6 @@ def run
   puts "Please enter a command:"
   command = gets.chomp
   while command != "exit"
-    puts "Please enter a command:"
-    command = gets.chomp
     if command == "list"
       list
     elsif command == "play"
@@ -59,6 +57,8 @@ def run
     elsif command == "help"
       help
     end 
+    puts "Please enter a command:"
+    command = gets.chomp
   end
   exit_jukebox
 end 
