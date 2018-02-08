@@ -32,7 +32,7 @@ def play(songs)
   songornumber = gets.chomp
   if possiblenumbers.include?(songornumber) 
     song = songs(songornumber.to_i-1)
-    puts "Playing #{"song"}"
+    puts "Playing #{song}"
   elsif possiblesongs.include?(songornumber)
     puts "Playing #{songornumber}"
   else 
