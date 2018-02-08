@@ -31,7 +31,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   songornumber = gets.chomp
   if possiblenumbers.include?(songornumber) 
-    song = songs(songornumber.to_i+1)
+    song = songs(songornumber.to_i-1)
     puts "Playing #{"song"}"
   elsif possiblesongs.include?(songornumber)
     puts "Playing #{songornumber}"
