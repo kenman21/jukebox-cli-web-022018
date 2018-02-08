@@ -20,4 +20,4 @@ def help
 end 
 
 def list 
-  
+  songs.each {|song| puts #{songs.index}
